@@ -1,7 +1,7 @@
-# DSA – Data Structures and Algorithms (C#)
+# DSA – Data Structures and Algorithms (Java)
 
-This repository contains C# implementations of basic **Data Structures** concepts required for academic submissions.  
-All implementations are done using **arrays, stacks, and queues** with clear and beginner-friendly code.
+This repository contains **Java implementations** of basic **Data Structures and Algorithms (DSA)** concepts.  
+The code is written in a **simple and easy-to-understand manner**, suitable for beginners and academic submissions.
 
 ---
 
@@ -14,7 +14,7 @@ Implements a **Stack using two Queues** where:
 - Pop operation is **costly (O(n))**
 
 **File:**  
-`QueueStack_PushFriendly.cs`
+`QueueStack_PushFriendly.java`
 
 ---
 
@@ -25,20 +25,20 @@ Implements a **Stack using two Queues** where:
 - Pop operation is **efficient (O(1))**
 
 **File:**  
-`QueueStack_PopFriendly.cs`
+`QueueStack_PopFriendly.java`
 
 ---
 
 ### 3. Unbounded Array Stack
 **Description:**  
-An **array-based stack** that dynamically:
-- Expands when full
+An **array-based Stack** that dynamically changes its size:
+- Expands when the stack is full
 - Shrinks when elements are removed  
 
-This ensures efficient memory usage during **push and pop operations**.
+This approach ensures **efficient memory usage** during push and pop operations.
 
 **File:**  
-`UnboundedArrayStack.cs`
+`UnboundedArrayStack.java`
 
 ---
 
@@ -49,20 +49,20 @@ Implements a **Queue using two Stacks** where:
 - Dequeue operation is **costly (O(n))**
 
 **File:**  
-`StackQueue_EnqueueFriendly.cs`
+`StackQueue_EnqueueFriendly.java`
 
 ---
 
-## 🛠️ Language Used
-- **C#**
+## 🛠️ Programming Language
+- **Java**
 
 ---
 
-## 🎯 Purpose
+## 🎯 Purpose of This Repository
 This repository is created for:
-- Learning Data Structures
 - Academic submission requirements
-- Understanding stack and queue implementations using different approaches
+- Learning and practicing Data Structures
+- Understanding different implementations of Stack and Queue
 
 ---
 
@@ -71,12 +71,12 @@ This repository is created for:
 
 ---
 
-## ✅ How to Use
+## ✅ How to Run the Code
 1. Clone the repository  
-2. Open files in Visual Studio / VS Code  
-3. Run and test individual classes  
+2. Open the project in any Java IDE (IntelliJ IDEA, Eclipse, NetBeans)  
+3. Compile and run individual `.java` files  
 
 ---
 
 ## 📎 Note
-Each code file is independent and focuses on explaining **one concept clearly**.
+Each Java file focuses on a **single data structure concept** and is implemented independently for clarity.
