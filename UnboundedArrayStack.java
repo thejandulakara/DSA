@@ -8,7 +8,7 @@ public class UnboundedArrayStack {
         top = -1;
     }
 
-    // Push operation
+   
     public void push(int value) {
         if (top == stack.length - 1) {
             resize(stack.length * 2);
@@ -16,7 +16,7 @@ public class UnboundedArrayStack {
         stack[++top] = value;
     }
 
-    // Pop operation
+
     public int pop() {
         if (top == -1) {
             throw new RuntimeException("Stack is empty");
@@ -31,7 +31,7 @@ public class UnboundedArrayStack {
         return value;
     }
 
-    // Resize stack
+    
     private void resize(int newSize) {
         int[] newStack = new int[newSize];
         for (int i = 0; i <= top; i++) {
