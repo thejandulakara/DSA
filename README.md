@@ -5,6 +5,11 @@ The code is written in a **simple and easy-to-understand manner**, suitable for 
 
 ---
 
+<p align="center">
+<a href="https://java.dev/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="react" width="70" height="70"/> </a>
+
+</p>
+
 ## 📌 Submission I
 
 ### 1. QueueStack – Push Friendly
