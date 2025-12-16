@@ -8,13 +8,13 @@ public class QueueStackPushFriendly {
     Queue<Integer> q1 = new LinkedList<>();
     Queue<Integer> q2 = new LinkedList<>();
 
-    // PUSH operation (O(1))
+    
     public void push(int x) {
         q1.add(x);
         System.out.println("Pushed: " + x);
     }
 
-    // POP operation (O(n))
+    
     public int pop() {
         if (q1.isEmpty()) {
             System.out.println("Stack is empty");
@@ -28,7 +28,7 @@ public class QueueStackPushFriendly {
         int popped = q1.remove();
         System.out.println("Popped: " + popped);
 
-        // Swap queues
+      
         Queue<Integer> temp = q1;
         q1 = q2;
         q2 = temp;
@@ -36,12 +36,12 @@ public class QueueStackPushFriendly {
         return popped;
     }
 
-    // DISPLAY stack
+    
     public void display() {
         System.out.println("Stack elements: " + q1);
     }
 
-    // MAIN method
+    
     public static void main(String[] args) {
 
         QueueStackPushFriendly stack = new QueueStackPushFriendly();
