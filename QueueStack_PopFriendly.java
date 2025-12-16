@@ -6,7 +6,7 @@ public class QueueStack_PopFriendly {
     Queue<Integer> q1 = new LinkedList<>();
     Queue<Integer> q2 = new LinkedList<>();
 
-    // Push operation (O(n))
+   
     public void push(int x) {
         q2.add(x);
 
@@ -19,7 +19,7 @@ public class QueueStack_PopFriendly {
         q2 = temp;
     }
 
-    // Pop operation (O(1))
+   
     public int pop() {
         if (q1.isEmpty()) {
             throw new RuntimeException("Stack is empty");
