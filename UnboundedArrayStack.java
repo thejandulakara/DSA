@@ -1,3 +1,5 @@
+package dsa.stack;
+
 public class UnboundedArrayStack {
 
     private int[] stack;
@@ -9,34 +11,60 @@ public class UnboundedArrayStack {
     }
 
    
-    public void push(int value) {
+    public void push(int x) {
         if (top == stack.length - 1) {
             resize(stack.length * 2);
         }
-        stack[++top] = value;
+
+        stack[++top] = x;
+        System.out.println("Pushed: " + x);
     }
 
-
+   
     public int pop() {
         if (top == -1) {
-            throw new RuntimeException("Stack is empty");
+            System.out.println("Stack is empty");
+            return -1;
         }
 
-        int value = stack[top--];
+        int popped = stack[top--];
+        System.out.println("Popped: " + popped);
 
         if (top > 0 && top == stack.length / 4) {
             resize(stack.length / 2);
         }
 
-        return value;
+        return popped;
     }
 
-    
+   
     private void resize(int newSize) {
         int[] newStack = new int[newSize];
         for (int i = 0; i <= top; i++) {
             newStack[i] = stack[i];
         }
         stack = newStack;
+    }
+
+   
+    public void display() {
+        System.out.print("Stack elements: ");
+        for (int i = 0; i <= top; i++) {
+            System.out.print(stack[i] + " ");
+        }
+        System.out.println();
+    }
+
+  
+    public static void main(String[] args) {
+
+        UnboundedArrayStack stack = new UnboundedArrayStack();
+
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.pop();
+        stack.push(4);
+        stack.display();
     }
 }
