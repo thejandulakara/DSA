@@ -14,7 +14,7 @@ public class SinglyLinkedList {
 
     Node head = null;
 
-    // INSERT at end
+
     public void insert(int data) {
         Node newNode = new Node(data);
 
@@ -31,7 +31,7 @@ public class SinglyLinkedList {
         System.out.println("Inserted: " + data);
     }
 
-    // DISPLAY list
+
     public void display() {
         Node temp = head;
         System.out.print("Linked List: ");
@@ -42,7 +42,7 @@ public class SinglyLinkedList {
         System.out.println("null");
     }
 
-    // MAIN method
+
     public static void main(String[] args) {
 
         SinglyLinkedList list = new SinglyLinkedList();
