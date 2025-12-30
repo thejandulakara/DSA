@@ -13,7 +13,7 @@ public class ArrayCircularQueue {
         size = 0;
     }
 
-    // ENQUEUE operation
+
     public void enqueue(int x) {
         if (size == capacity) {
             System.out.println("Queue is full");
@@ -26,7 +26,6 @@ public class ArrayCircularQueue {
         System.out.println("Enqueued: " + x);
     }
 
-    // DEQUEUE operation
     public int dequeue() {
         if (size == 0) {
             System.out.println("Queue is empty");
@@ -40,7 +39,7 @@ public class ArrayCircularQueue {
         return removed;
     }
 
-    // DISPLAY queue
+
     public void display() {
         System.out.print("Queue elements: ");
         for (int i = 0; i < size; i++) {
@@ -49,7 +48,7 @@ public class ArrayCircularQueue {
         System.out.println();
     }
 
-    // MAIN method
+
     public static void main(String[] args) {
 
         ArrayCircularQueue queue = new ArrayCircularQueue(5);
