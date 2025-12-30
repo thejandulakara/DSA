@@ -13,7 +13,6 @@ public class ArrayCircularQueue {
         size = 0;
     }
 
-
     public void enqueue(int x) {
         if (size == capacity) {
             System.out.println("Queue is full");
