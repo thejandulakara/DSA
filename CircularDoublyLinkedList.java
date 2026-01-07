@@ -13,7 +13,7 @@ public class CircularDoublyLinkedList {
 
     Node head = null;
 
-    // INSERT at end
+   
     public void insert(int data) {
         Node newNode = new Node(data);
 
@@ -33,7 +33,7 @@ public class CircularDoublyLinkedList {
         System.out.println("Inserted: " + data);
     }
 
-    // DISPLAY list
+    
     public void display() {
         if (head == null) {
             System.out.println("List is empty");
@@ -49,7 +49,7 @@ public class CircularDoublyLinkedList {
         System.out.println("(back to head)");
     }
 
-    // MAIN method
+    
     public static void main(String[] args) {
 
         CircularDoublyLinkedList list = new CircularDoublyLinkedList();
