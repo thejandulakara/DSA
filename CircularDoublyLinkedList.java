@@ -12,7 +12,6 @@ public class CircularDoublyLinkedList {
     }
 
     Node head = null;
-
    
     public void insert(int data) {
         Node newNode = new Node(data);
