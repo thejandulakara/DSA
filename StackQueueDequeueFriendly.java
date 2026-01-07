@@ -7,7 +7,7 @@ public class StackQueueDequeueFriendly {
     Stack<Integer> s1 = new Stack<>();
     Stack<Integer> s2 = new Stack<>();
 
-    // ENQUEUE operation (O(n))
+
     public void enqueue(int x) {
 
         while (!s1.isEmpty()) {
@@ -22,7 +22,7 @@ public class StackQueueDequeueFriendly {
         }
     }
 
-    // DEQUEUE operation (O(1))
+
     public int dequeue() {
         if (s1.isEmpty()) {
             System.out.println("Queue is empty");
@@ -34,12 +34,11 @@ public class StackQueueDequeueFriendly {
         return dequeued;
     }
 
-    // DISPLAY queue
+
     public void display() {
         System.out.println("Queue elements: " + s1);
     }
 
-    // MAIN method
     public static void main(String[] args) {
 
         StackQueueDequeueFriendly queue = new StackQueueDequeueFriendly();
